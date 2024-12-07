@@ -26,3 +26,14 @@ print(float('123.456'))
 print(123.456 * 10)
 print(int(1234.56))
 print(1234 % 10)
+
+print('module_1_3.py')
+name = 'Roman'
+print('Name:',name)
+age = 42
+print('Age: ',age)
+new_age = 1
+print('New age: ',age + new_age)
+is_studet = True
+print('Is Student: ',is_studet)
+
