@@ -4,6 +4,7 @@
 #    print(example[4:])  # срез будет происходить с указанного элемента до конечного
 #    print(example[::-1])  # мы не указали границ, но уже в обратном порядке, только шаг
 #    print(example[1::2])  # каждый второй символ этой строки, номер по порядку и шаг
+print('module_1_4.py')
 my_string = input()
 print(len(my_string))
 print(my_string.upper())
