@@ -3,10 +3,10 @@ primes = []
 not_primes = []
 for i in range(2, 16):
     if (i % 2 == 0 and i / 2 != 1) or (i % 3 == 0 and i / 3 != 1):
-        is_prime = True
+        is_prime = False
         not_primes.append(i)
     else:
-        is_prime = False
+        is_prime = True
         primes.append(i)
 print('Primes:', primes)
 print('Not Primes:', not_primes)
