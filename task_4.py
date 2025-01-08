@@ -1,4 +1,4 @@
-def send_email(message, recipient, sender='university.help@gmail.com'):
+def send_email(message, recipient, *, sender='university.help@gmail.com'):
     tuple_ = '.com', '.ru', '.net'
     result_1_ = (recipient.endswith(tuple_) == 1 and recipient.count('@') == 1
             and sender.endswith(tuple_) == 1 and sender.count('@') == 1)
@@ -16,8 +16,8 @@ def send_email(message, recipient, sender='university.help@gmail.com'):
 
 send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
 send_email('Вы видите это сообщение как лучший студент курса!',
-           'urban.fan@gmail.com', 'urban.info@gmail.com')
+           'urban.fan@gmail.com', sender='urban.info@gmail.com')
 send_email('Пожалуйста исправьте задание',
-           'urban.studen@tmail.ru', 'urban.teacher@mail.uk')
+           'urban.studen@tmail.ru', sender='urban.teacher@mail.uk')
 send_email('Напоминаю самому себе о вебинаре',
-           'urban.teacher@mail.ru', 'urban.teacher@mail.ru')
+           'urban.teacher@mail.ru', sender='urban.teacher@mail.ru')
